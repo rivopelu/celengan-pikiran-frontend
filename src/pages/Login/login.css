@@ -1,0 +1,249 @@
+.main_login {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.login_title {
+  font-weight: bold;
+  font-size: 44px;
+  text-align: left;
+  padding-top: 22px;
+  text-transform: capitalize;
+}
+
+.subtitle_login {
+  font-size: 14px;
+  color: #a7a7a7;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 30px;
+}
+.input-single {
+  background-color: #242424;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 25px;
+  color: #a7a7a7;
+  border-radius: 8px;
+  font-family: FontAwesome;
+  height: 55px;
+}
+input {
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  padding: 10px 0;
+  width: 90%;
+}
+
+.sles{
+  display: none;
+}
+.lupa_pas_desktop{
+  display: none;
+}
+
+.bg-red{
+    background-color: rebeccapurple;
+}
+
+input:focus + .input-group {
+  background-color: red;
+}
+
+.btn-login {
+  font-size: 15px;
+  padding: 10px 25px;
+  height: 55px;
+  text-transform: capitalize;
+  background-color: #242424;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    to right,
+    #a43881 0%,
+    #d6324e 51.04%,
+    #fa8247 100%
+  );
+  transition: 0.2s;
+}
+
+.btn-login i {
+  display: flex;
+  transition: 0.2s;
+}
+
+.btn-login:hover {
+  transform: translateY(-2px);
+  transition: 0.2s;
+}
+
+.btn-login:hover i {
+  transform: translateX(4px);
+}
+
+.lupa_pas {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid grey;
+  transition: 0.2s;
+}
+
+.lupa_pas:hover {
+  color: #e1687c;
+  transition: 0.2s;
+}
+
+.title_loginSosmed {
+  font-size: 14px;
+  text-align: center;
+  color: #a7a7a7;
+  padding: 25px 0;
+}
+
+.login_sosmed_btn_group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.gradient_login {
+
+    border-radius: 8px;
+  background: linear-gradient(#a43881 0%, #d6324e 51.04%, #fa8247 100%);
+  padding: 1.5px;
+}
+
+.gradient_login .btn_sosmed{
+    height: 55px;
+    border-radius: 8px;
+    background: #161616;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    gap: 12px;
+    cursor: pointer;
+    transition: .2s;
+
+    
+  
+}
+
+.gradient_login .btn_sosmed:hover{
+    background: #1f1f1f;
+}
+
+
+.copyright{
+  
+
+  text-align: center;
+  font-size: 12px;
+  margin: 30px 0;
+  color: #a7a7a7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+  .main_login{
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .login_brand{
+      font-size: 25px;
+      
+      
+  }
+
+  .input-group{
+      padding-top: 40px;
+  }
+.content_login{
+  width: 50%;
+}
+  .input-group,
+  .login_sosmed{
+      
+      width: 100%;
+  }
+
+  .copyright{
+      display: flex;
+      padding-top: 10rem;
+  }
+}
+
+
+@media only screen and (min-width: 1280px){
+  .main_login{
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .content_login{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 15%;
+      margin-top: 40px;
+  }
+
+  .sles{
+    display: block;
+    padding: 0 80px;
+    color: #a7a7a7;
+  }
+
+  .lupa_pas{
+      display: none;
+  }
+  .lupa_pas_desktop{
+    display: flex;
+    padding-top: 40px;
+    border-bottom: 1px solid #1f1f1f;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #a7a7a7;
+    padding-bottom: 5px;
+    cursor: pointer;
+  }
+
+  .title_loginSosmed{
+    display: none;
+  }
+
+  .input-group{
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+  }
+
+  .copyright{
+    margin: 0;padding: 0;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;

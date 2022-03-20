@@ -1,0 +1,21 @@
+
+#brand_global {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    gap: 5px;
+
+    i {
+        background: linear-gradient(#a43881 0%, #fa0430 48.53%, #fa8247 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+        
+
+
+
+    }
+
+}
+
