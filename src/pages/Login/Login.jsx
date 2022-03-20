@@ -18,7 +18,7 @@ const Login = () => {
         <div className="input-group">
           <div className="input-single">
 
-            <input type="text" placeholder='&#xF002' />
+            <input type="text" placeholder='Email' />
             <i className="fas fa-user-alt"></i>
           </div>
           <div className="input-single">

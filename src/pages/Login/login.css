@@ -20,8 +20,25 @@
   flex-direction: column;
   gap: 12px;
   margin-top: 30px;
+  align-items: center;
+  justify-content: center;
 }
 .input-single {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* background-color: rebeccapurple; */
+  justify-content: center;
+  margin-left: 3%;
+}
+
+.input-single i{
+  display: flex;
+  position: static;
+  width: 12px;
+  transform: translateX(-50px);
+}
+input {
   background-color: #242424;
   display: flex;
   align-items: center;
@@ -29,15 +46,16 @@
   padding: 5px 25px;
   color: #a7a7a7;
   border-radius: 8px;
-  font-family: FontAwesome;
+
   height: 55px;
-}
-input {
-  background-color: transparent;
+  width: 100%;
   border: none;
-  font-size: 15px;
-  padding: 10px 0;
-  width: 90%;
+}
+
+input:focus{
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px #d6324e;
 }
 
 .sles{
@@ -47,15 +65,14 @@ input {
   display: none;
 }
 
-.bg-red{
-    background-color: rebeccapurple;
-}
+
 
 input:focus + .input-group {
   background-color: red;
 }
 
 .btn-login {
+  width: 96%;
   font-size: 15px;
   padding: 10px 25px;
   height: 55px;
@@ -81,6 +98,8 @@ input:focus + .input-group {
   display: flex;
   transition: 0.2s;
 }
+
+
 
 .btn-login:hover {
   transform: translateY(-2px);
@@ -117,10 +136,13 @@ input:focus + .input-group {
 }
 
 .gradient_login {
-
+display: flex;
     border-radius: 8px;
   background: linear-gradient(#a43881 0%, #d6324e 51.04%, #fa8247 100%);
   padding: 1.5px;
+  width: 96%;
+  margin: auto;
+  transition: .2s;
 }
 
 .gradient_login .btn_sosmed{
@@ -133,9 +155,15 @@ input:focus + .input-group {
     gap: 12px;
     cursor: pointer;
     transition: .2s;
+    width: 100%;
 
     
   
+}
+
+.gradient_login:hover{
+  transform: translateY(-3px);
+  transition: .2s;
 }
 
 .gradient_login .btn_sosmed:hover{
@@ -247,3 +275,5 @@ input:focus + .input-group {
     position: absolute;
     bottom: 0;
     padding-bottom: 10px;
+  }
+}
