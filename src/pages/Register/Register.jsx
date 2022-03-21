@@ -53,7 +53,41 @@ const Register = () => {
             </div>
           </div>
 
+        </div>
+        <div className="bawah_login">
+          <p className='sosmed-p'>Sign Up With Social Media</p>
+          <div className="sosmed_login_icon">
+            <div className="atas_login_sosmed_btn">
 
+              {/* login sosmed icon */}
+              <div className="gradient_icon_login">
+                <div className="black_icon_login">
+                  <i class="fab fa-google"></i>
+                </div>
+              </div>
+              {/* login sosmed icon */}
+              <div className="gradient_icon_login">
+                <div className="black_icon_login">
+                  <i className="fab fa-facebook"></i>
+                </div>
+              </div>
+              {/* login sosmed icon */}
+              <div className="gradient_icon_login">
+                <div className="black_icon_login">
+                  <i class="fab fa-apple"></i>
+                </div>
+              </div>
+
+            </div>
+            <button className=' btn-login btn-register-edit'>
+              <p>Login to your account</p>
+              <i className="fas fa-arrow-right"></i>
+            </button>
+          </div>
+
+        </div>
+        <div className="copyright">
+          <p>&copy; 2022 - Design And Developed By   Rivo Pelu</p>
         </div>
       </div>
     </div>

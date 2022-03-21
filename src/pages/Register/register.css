@@ -1,4 +1,96 @@
-.logo-input{
-    display: flexbox;
-    transform: translateX(-20px);
+.register {
+  padding-top: 20px;
+}
+
+.register .tulisan {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+
+.register .tulisan .link_login {
+  color: #a7a7a7;
+}
+.register .tulisan .link_login span {
+  color: red;
+}
+
+/* .input_group {
+  background-color: rebeccapurple;
+} */
+
+.input_group .input_atas_group {
+  width: 100%;
+}
+.input_group .input_register {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input_group .input_register .input-single {
+  margin: 0;
+  margin-left: 6px;
+  width: 100%;
+}
+
+.input_group label {
+  font-size: 13px;
+  color: #a7a7a7;
+  margin-left: 6px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.bawah_login .sosmed-p{
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: #a7a7a7;
+
+}
+
+.sosmed_login_icon{
+    display: flex;
+    flex-direction: column;
+}
+
+.sosmed_login_icon .atas_login_sosmed_btn{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sosmed_login_icon .gradient_icon_login{
+    background: linear-gradient( to right, #a43881 0%, #d6324e 51.04%, #fa8247 100% );
+    transition: 0.2s;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    border-radius: 8px;
+}
+.sosmed_login_icon .gradient_icon_login:hover{
+    display: flex;
+transform: translateY(-3px);
+}
+
+.sosmed_login_icon .gradient_icon_login .black_icon_login{
+    background-color: #161616;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.sosmed_login_icon .btn-register-edit{
+   margin-top: 20px;
+   margin-left: 6px;
+   width: 99%;
 }

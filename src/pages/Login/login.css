@@ -37,6 +37,8 @@
   position: static;
   width: 12px;
   transform: translateX(-50px);
+  color: #a7a7a7;
+
 }
 input {
   background-color: #242424;
