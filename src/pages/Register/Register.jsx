@@ -1,7 +1,12 @@
 import React from 'react'
 import { Brand } from '../../components'
 import "./register.css"
+import gambarRegis from "./img/imgregister.png"
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
 const Register = () => {
+
+  const history = useHistory()
+
   return (
     <div className='register'>
       <div className="main">
@@ -9,7 +14,7 @@ const Register = () => {
 
           <Brand className="brand_register" />
           <h1 className="register_title">Create New Account</h1>
-          <div className="link_login">Already A Member ? <span>Log In</span></div>
+          <div className="link_login">Already A Member ? <span onClick={() => history.push('/login')}>Log In</span></div>
         </div>
 
         <div className="input_group">
@@ -48,7 +53,16 @@ const Register = () => {
             <label htmlFor="passs">Password</label>
             <div className="input-single">
 
-              <input type="password" placeholder='Email' id='passs' />
+              <input type="password" placeholder='password' id='passs' />
+              <i className="fa-solid fa-eye-slash"></i>
+            </div>
+          </div>
+          <div className="input_register">
+
+            <label htmlFor="passs">Repeat Password</label>
+            <div className="input-single">
+
+              <input type="password" placeholder='repeat password' id='passs' />
               <i className="fa-solid fa-eye-slash"></i>
             </div>
           </div>
@@ -90,6 +104,9 @@ const Register = () => {
           <p>&copy; 2022 - Design And Developed By   Rivo Pelu</p>
         </div>
       </div>
+       <div className="kanan_register">
+         <img src={gambarRegis} alt="jangan datan" />
+       </div>
     </div>
   )
 }

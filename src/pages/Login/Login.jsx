@@ -1,9 +1,10 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
 import { Brand } from '../../components'
 import './login.css'
 const Login = () => {
 
-
+const history = useHistory()
 
   return (
     <div className='main_login'>
@@ -12,6 +13,8 @@ const Login = () => {
       <p className="subtitle_login">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum illo dolore.
       </p>
+
+      <p className='link_ke_register'>Belum mempunyai akun ? silahkan <span onClick={()=>history.push('/register')}>silahkan daftar</span></p>
       <div className="content_login">
 
 
@@ -69,7 +72,7 @@ const Login = () => {
         </div>
       </div>
       <div className=" lupa_pas_desktop" >
-        Forgot Password ? 
+      <p>Forgot Password ? </p>  
       </div>
       <div className="copyright">
         <p>&copy; 2022 - Design And Developed By   Rivo Pelu</p>

@@ -67,6 +67,21 @@ input:focus{
   display: none;
 }
 
+.link_ke_register{
+  color: #bebaba;
+  padding-top: 10px;
+}
+
+.link_ke_register span {
+  color: #d6324e;
+  cursor: pointer;
+
+}
+
+.link_ke_register span:hover{
+  border-bottom: 1px solid;
+
+}
 
 
 input:focus + .input-group {
@@ -189,6 +204,7 @@ display: flex;
 
 
 
+
 @media only screen and (min-width: 768px) {
   .main_login{
       min-height: 100vh;
@@ -260,6 +276,16 @@ display: flex;
     color: #a7a7a7;
     padding-bottom: 5px;
     cursor: pointer;
+    
+  }
+
+  .lupa_pas_desktop p{
+    transition: .2s;
+  }
+
+  .lupa_pas_desktop p:hover{
+    color: #d6324e;
+    transition: .2s;
   }
 
   .title_loginSosmed{
