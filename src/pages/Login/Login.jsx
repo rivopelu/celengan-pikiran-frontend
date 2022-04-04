@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
 import { Brand } from '../../components'
 import './login.css'
 const Login = () => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const history = useHistory()
 
-const history = useHistory()
 
+  const onChangeEmail = (e) => {
+    const value = e.target.value
+    setEmail(value)
+  }
+
+  const onChangePassword = (e) => {
+    const value = e.target.value;
+    setPassword(value)
+  }
   return (
     <div className='main_login'>
       <Brand className='login_brand' />
@@ -14,19 +25,19 @@ const history = useHistory()
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum illo dolore.
       </p>
 
-      <p className='link_ke_register'>Belum mempunyai akun ? silahkan <span onClick={()=>history.push('/register')}>silahkan daftar</span></p>
+      <p className='link_ke_register'>Belum mempunyai akun ? silahkan <span onClick={() => history.push('/register')}>silahkan daftar</span></p>
       <div className="content_login">
 
 
         <div className="input-group">
           <div className="input-single">
 
-            <input type="text" placeholder='Email' />
+            <input type="text" placeholder='Email' value={email} onChange={onChangeEmail} />
             <i className="fas fa-user-alt"></i>
           </div>
           <div className="input-single">
 
-            <input type="password" placeholder='Password' />
+            <input type="password" placeholder='Password' value={password} onChange={onChangePassword} />
             <i className="fas fa-eye-slash"></i>
           </div>
 
@@ -72,7 +83,7 @@ const history = useHistory()
         </div>
       </div>
       <div className=" lupa_pas_desktop" >
-      <p>Forgot Password ? </p>  
+        <p>Forgot Password ? </p>
       </div>
       <div className="copyright">
         <p>&copy; 2022 - Design And Developed By   Rivo Pelu</p>
